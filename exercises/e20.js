@@ -4,34 +4,29 @@
 // (1 - an array of names that contain "a" in name, 2 - an array of names that don't have 'a' in name)
 // separateNamesWithAFromRest(["jon", "alice", "andrew", "mark", "jimmy"]) -> [["alice", "andrew", "mark"], ["jon", "jimmy"]]
 // NOTE: You MUST use double/nested FOR loop to solve this exercise. The array.includes() method is NOT allowed.
-var listOfNames = ["jon", "alice", "andrew", "mark", "jimmy"];
-
 
 export function separateNamesWithAFromRest(array) {
   // Your code goes here...
   const namesWith = [];
   const namesWithout = [];
 
-  for (var i = 0; i < array.length; i++) {
-    const name = array[i];
+  for (let names of array) {
     let hasAnA = false;
 
-    for (var j = 0; j < name.length; j++) {
-      if (name[j] === 'a') {
+    for (let i = 0; i < names.length; i++) {
+      if (names[i].toLowerCase() === 'a') {
         hasAnA = true;
       }
     }
 
     if (hasAnA) {
-      namesWith.push(name);
+      namesWith.push(names);
     } else {
-      namesWithout.push(name);
+      namesWithout.push(names);
     }
   }
-
   return [namesWith, namesWithout];
 }
-console.log(separateNamesWithAFromRest(listOfNames));
 
 
 // === TEST YOURSELF ===

@@ -4,14 +4,20 @@
 // concatArrays(['d', 'r', 'a'], ['f', 'y']) => ['d', 'r', 'a', 'f', 'y']
 // NOTE: You can NOT use the array.concat() method in your code
 
-let arrayOne = ['d', 'r', 'a'];
-let arrayTwo = ['f', 'y'];
+
 
 export function concatArrays(arr1, arr2) {
   // Your code goes here...
-  return [...arr1, ...arr2];
+  const combinedArray = [];
+
+  for (let i = 0; i < arr1.length; i++) {
+    combinedArray.push(arr1[i]);
+  } for (let j = 0; j < arr2.length; j++) {
+    combinedArray.push(arr2[j]);
+  }
+  return combinedArray;
 }
-console.log(concatArrays(arrayOne, arrayTwo));
+
 
 
 // === TEST YOURSELF ===

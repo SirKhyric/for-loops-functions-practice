@@ -6,16 +6,14 @@
 
 export function reverseArray(array) {
   // Your code goes here...
-  const anArr = [];
+  const theAnswer = [];
 
   for (let i = array.length - 1; i >= 0; i--) {
-    let daNums = array[i];
-    
-    anArr.push(daNums);
+    theAnswer.push(array[i]);
   }
-  return anArr
+  return theAnswer;
 }
-console.log(reverseArray([1, 2, 3 ,4]));
+
 
 
 // === TEST YOURSELF ===

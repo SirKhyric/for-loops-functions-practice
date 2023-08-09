@@ -5,16 +5,16 @@
 // NOTE: You can NOT use the array.join(), array.toString(), and array.replace() methods in your code
 
 export function joinToString(array, separator) {
-  let suppor = '';
+  let support = '';
   for (let i = 0; i < array.length; i++) {
-    suppor += array[i];
+    support += array[i];
     if (i < array.length - 1) {
-      suppor += separator
+      support += separator
     }
   }
-  return suppor;
+  return support;
 }
-console.log(joinToString(['a', 'b', 'c'], "-"));
+
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-18"
 // If the test has all tests passed, switch to the next exercise file

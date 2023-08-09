@@ -14,7 +14,7 @@ export function doesArrayInclude(array, value) {
   }
   return false;
 }
-console.log(doesArrayInclude(['a', 'b', 'c'], 'c'));
+
 
 
 // === TEST YOURSELF ===

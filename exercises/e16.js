@@ -18,7 +18,6 @@ export function flatArrays(array) {
   }
   return arrArea;
 }
-console.log(flatArrays([['d', 'r'], 'z', 'b', ['f', 'y']]));
 
 
 // === TEST YOURSELF ===

@@ -58,7 +58,6 @@ export function getClientsWithWrongBalance(bankAccounts) {
 
   return accountsWithWrongBalance;
 }
-console.log(getClientsWithWrongBalance(bankAccounts));
 
 
 // === TEST YOURSELF ===
